@@ -15,18 +15,14 @@
  */
 package org.springframework.samples.petclinic.discovery;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-/**
- * @author Maciej Szarlinski
- */
-@EnableEurekaServer
-@SpringBootApplication
-public class DiscoveryServerApplication {
+@SpringBootTest
+class DiscoveryServerApplicationTests {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DiscoveryServerApplication.class, args);
+	@Test
+	void contextLoads() {
 	}
+
 }
